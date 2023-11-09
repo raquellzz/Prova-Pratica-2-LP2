@@ -1,60 +1,61 @@
-package src.br.ufrn.imd.model;
+// add package src.br.ufrn.imd.model
+package br.ufrn.imd.model;
 
-public class ContaCorrente implements ITributavel{
+public class ContaCorrente implements ITributavel {
     String agencia;
     String numero;
     double saldo;
 
-    public ContaCorrente(){
+    public ContaCorrente() {
         this.agencia = "";
         this.numero = "";
         this.saldo = 0;
     }
 
-    public ContaCorrente(String agencia, String numero, double saldo){
+    public ContaCorrente(String agencia, String numero, double saldo) {
         this.agencia = agencia;
         this.numero = numero;
         this.saldo = saldo;
     }
 
-    public void setAgencia(String agencia){
+    public void setAgencia(String agencia) {
         this.agencia = agencia;
     }
 
-    public String getAgencia(){
+    public String getAgencia() {
         return this.agencia;
     }
 
-    public void setNumero(String numero){
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public String getNumero(){
+    public String getNumero() {
         return this.numero;
     }
 
-    public void setSaldo(double saldo){
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    public double getSaldo(){
+    public double getSaldo() {
         return this.saldo;
     }
 
-    public void sacar(double valor){
+    public void sacar(double valor) {
 
     }
 
-    public void depositar(double valor){
+    public void depositar(double valor) {
 
     }
 
-    public boolean transferir(double valor, ContaCorrente cc, double taxa){
+    public boolean transferir(double valor, ContaCorrente cc, double taxa) {
         return true;
     }
 
     @Override
-    public double calcularTributos(){
-        return saldo * (38/100);
+    public double calcularTributos() {
+        return saldo * (38 / 100);
     }
 }

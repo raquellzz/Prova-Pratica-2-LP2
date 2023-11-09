@@ -1,11 +1,11 @@
-package src.br.ufrn.imd.controller;
+package br.ufrn.imd.controller;
 
-import src.br.ufrn.imd.model.Pessoa;
+import br.ufrn.imd.model.Pessoa;
 
 public class GeradorImpostoRenda {
     double totalTributo;
 
-    public double calculaValorTotalTributo(Pessoa p){
+    public double calculaValorTotalTributo(Pessoa p) {
         return 0;
     }
 }

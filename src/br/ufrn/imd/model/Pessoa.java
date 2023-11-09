@@ -1,4 +1,4 @@
-package src.br.ufrn.imd.model;
+package br.ufrn.imd.model;
 
 public class Pessoa {
     String nome;
@@ -6,50 +6,50 @@ public class Pessoa {
     ContaCorrente conta;
     SeguroVida seguro;
 
-    public Pessoa(){
+    public Pessoa() {
         this.nome = "";
         this.Salario = 0;
         this.conta = null;
         this.seguro = null;
     }
 
-    public Pessoa(String nome, double Salario, ContaCorrente conta, SeguroVida seguro){
+    public Pessoa(String nome, double Salario, ContaCorrente conta, SeguroVida seguro) {
         this.nome = nome;
         this.Salario = Salario;
         this.conta = conta;
         this.seguro = seguro;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getNome(){
+    public String getNome() {
         return this.nome;
     }
 
-    public void setSalario(double Salario){
+    public void setSalario(double Salario) {
         this.Salario = Salario;
     }
 
-    public double getSalario(){
+    public double getSalario() {
         return this.Salario;
     }
 
-    public void setConta(ContaCorrente conta){
+    public void setConta(ContaCorrente conta) {
         this.conta = conta;
     }
 
-    public ContaCorrente getConta(){
+    public ContaCorrente getConta() {
         return this.conta;
     }
 
-    public void setSeguro(SeguroVida seguro){
+    public void setSeguro(SeguroVida seguro) {
         this.seguro = seguro;
     }
 
-    public SeguroVida getSeguro(){
+    public SeguroVida getSeguro() {
         return this.seguro;
     }
-    
+
 }
