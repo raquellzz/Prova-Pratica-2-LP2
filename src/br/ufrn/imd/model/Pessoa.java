@@ -1,6 +1,6 @@
 package br.ufrn.imd.model;
 
-public class Pessoa {
+public class Pessoa implements ITributavel {
     String nome;
     double Salario;
     ContaCorrente conta;
@@ -52,4 +52,7 @@ public class Pessoa {
         return this.seguro;
     }
 
+    public double calcularTributos() {
+        return conta.calcularTributos() + seguro.calcularTributos();
+    }
 }
