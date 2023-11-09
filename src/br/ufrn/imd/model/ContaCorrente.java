@@ -1,4 +1,3 @@
-// add package src.br.ufrn.imd.model
 package br.ufrn.imd.model;
 
 public class ContaCorrente implements ITributavel {

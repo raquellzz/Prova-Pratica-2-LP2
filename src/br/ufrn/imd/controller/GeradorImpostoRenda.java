@@ -6,6 +6,6 @@ public class GeradorImpostoRenda {
     double totalTributo;
 
     public double calculaValorTotalTributo(Pessoa p) {
-        return 0;
+        return p.calcularTributos();
     }
 }
