@@ -1,7 +1,8 @@
-package br.ufrn.imd.dao;
+package src.br.ufrn.imd.dao;
 
 import java.util.ArrayList;
-import br.ufrn.imd.model.Pessoa;
+
+import src.br.ufrn.imd.model.Pessoa;
 
 public class PessoaDAO {
     ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();

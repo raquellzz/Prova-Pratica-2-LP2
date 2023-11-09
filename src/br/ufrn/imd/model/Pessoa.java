@@ -1,4 +1,4 @@
-package br.ufrn.imd.model;
+package src.br.ufrn.imd.model;
 
 public class Pessoa {
     String nome;

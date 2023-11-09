@@ -1,8 +1,7 @@
-package br.ufrn.imd.view;
+package src.br.ufrn.imd.view;
 
-import br.ufrn.imd.model.*;
-import br.ufrn.imd.dao.PessoaDAO;
-//import br.ufrn.imd.controller.GeradorImpostoRenda;
+import src.br.ufrn.imd.dao.PessoaDAO;
+import src.br.ufrn.imd.model.*;
 
 
 public class ImpostoRendaPF {
