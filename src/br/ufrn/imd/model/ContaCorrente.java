@@ -2,9 +2,9 @@
 package br.ufrn.imd.model;
 
 public class ContaCorrente implements ITributavel {
-    String agencia;
-    String numero;
-    double saldo;
+    private String agencia;
+    private String numero;
+    private double saldo;
 
     public ContaCorrente() {
         this.agencia = "";
@@ -43,19 +43,24 @@ public class ContaCorrente implements ITributavel {
     }
 
     public void sacar(double valor) {
-
+        saldo -= valor;
     }
 
     public void depositar(double valor) {
-
+        saldo += valor;
     }
 
-    public boolean transferir(double valor, ContaCorrente cc, double taxa) {
-        return true;
+    public boolean transferir(double valor, ContaCorrente cc) {
+        if (saldo >= valor) {
+            saldo -= valor;
+            cc.depositar(valor);
+            return true;
+        } else
+            return false;
     }
 
     @Override
     public double calcularTributos() {
-        return saldo * (38 / 100);
+        return saldo * (38 / 10000);
     }
 }
