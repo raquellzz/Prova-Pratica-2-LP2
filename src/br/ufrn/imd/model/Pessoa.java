@@ -2,20 +2,20 @@ package br.ufrn.imd.model;
 
 public class Pessoa implements ITributavel {
     String nome;
-    double Salario;
+    double salario;
     ContaCorrente conta;
     SeguroVida seguro;
 
     public Pessoa() {
         this.nome = "";
-        this.Salario = 0;
+        this.salario = 0;
         this.conta = null;
         this.seguro = null;
     }
 
-    public Pessoa(String nome, double Salario, ContaCorrente conta, SeguroVida seguro) {
+    public Pessoa(String nome, double salario, ContaCorrente conta, SeguroVida seguro) {
         this.nome = nome;
-        this.Salario = Salario;
+        this.salario = salario;
         this.conta = conta;
         this.seguro = seguro;
     }
@@ -28,12 +28,12 @@ public class Pessoa implements ITributavel {
         return this.nome;
     }
 
-    public void setSalario(double Salario) {
-        this.Salario = Salario;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
     public double getSalario() {
-        return this.Salario;
+        return this.salario;
     }
 
     public void setConta(ContaCorrente conta) {
@@ -53,6 +53,6 @@ public class Pessoa implements ITributavel {
     }
 
     public double calcularTributos() {
-        return conta.calcularTributos() + seguro.calcularTributos();
+        return conta.calcularTributos() + seguro.calcularTributos() + (salario * 0.11);
     }
 }
